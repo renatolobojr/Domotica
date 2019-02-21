@@ -10,3 +10,8 @@ depois: cd paho.mqtt.python
         depois utilizar o código MQTT.py que consistirá de uma aplicação Python capaz de 
         escrever na tela todas as mensagens recebidas pelo broker em um determinado tópico. 
 
+
+Para executar no terminal, vá a pasta onde o arquivo MQTT.py está salvo e utilize o 
+seguinte comando: python MQTT.py
+
+Para sair da aplicação, pressione Ctrl + C.
