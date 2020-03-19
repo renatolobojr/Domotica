@@ -1,4 +1,4 @@
-# Domotics
+# Domótica
 _______________________________________________________
 Projeto direcionado á domótica
 
