@@ -11,6 +11,17 @@ Pois pelo que eu entendi, não preciso programar a parte
 de interface com o usuário, pois já tem muita coisa 
 pronta e funcionando, eu poderia focar minhas energias 
 apenas na parte do Raspbery PI
+_______________________________________________________
+http://www.sislite.pt/domus.htm
+https://pt.wikipedia.org/wiki/Dom%C3%B3tica
+https://www.getninjas.com.br/guia/reformas-e-reparos/automacao-residencial/o-que-e-domotica/
+https://www.infoescola.com/tecnologia/domotica/
+https://www.luzesom.pt/pt/instalacao-de-equipamentos/domotica/
+https://www.archdaily.com.br/br/908938/como-projetar-casas-inteligentes-8-conselhos-para-incorporar-a-domotica-na-arquitetura
+http://www.forumdaconstrucao.com.br/conteudo.php?a=11&Cod=2105
+https://mundoeducacao.bol.uol.com.br/informatica/domotica.htm
+http://www.unibratec.edu.br/tecnologus/wp-content/uploads/2010/12/lins_moura.pdf
+_______________________________________________________
 
 # Atualização 19/03/2020
 
