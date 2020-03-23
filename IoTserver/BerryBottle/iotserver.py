@@ -9,6 +9,10 @@ def example():
     return template('hello {{ nome}}!! Seja Bem Vindo!', nome = 'Renato')
     #return 'hello world'
 
+@route('/<filename>')
+def server_static(filename):
+    return static_file(filename, root='img/')
+
 @route('/login') # or @route('/login')
 def login():
     return '''

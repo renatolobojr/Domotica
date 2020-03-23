@@ -1,56 +1,223 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
 
-    <title>Domótica!</title>
+    /* Style the tab */
+    .tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 640px;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    /* Style the buttons inside the tab */
+    .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    }
 
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+    background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 75%;
+    border-left: none;
+    height: 640px;
+    }
+
+    .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4169E1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(32, 52, 112);
+    }
+
+    .button:hover {
+      background-color: rgba(65, 105, 225, 0.719);
+      color: #000;
+    } /*foco no último botão selecionado*/
+
+    .button:active {
+    background-color: rgb(18, 42, 124);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+    h1 {
+      text-shadow: 1px 1px #000;
+      color:#4169E1;
+      text-align: center
+    }
+    h2 {
+      color:#000;
+      text-align: center
+    }
+    h3 {
+      color:#000;
+      text-align: center
+    }
+    </style>
   </head>
 
-<body>
-  <div class="container text-center">
-    <h1 class="display-3 m-5">Domótica</h1>
-    <p class="lead">
-      Controle sua casa de onde você quiser e puder.<br>
-      Tudo o que você precisa tá bem aqui.
-    </p>
+  <body>
+    
+    <h1 style="color:#4169E1">Domótica</h1>
+    <p>Controle sua casa de onde puder na hora que quiser</p>
 
-      <div class="tabbable"> <!-- Only required for left/right tabs -->
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab1" data-toggle="tab">Sala de Estar</a></li>
-    <li><a href="#tab2" data-toggle="tab">Quarto do Renato</a></li>
-    <li><a href="#tab3" data-toggle="tab">Cozinha</a></li>
-    <li><a href="#tab4" data-toggle="tab">Banheiro</a></li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane active" id="tab1">
-      <p>Estou na seção 1</p>
+    <div class="tab">                                       <!-- Meu comentário em HTML -->
+      <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+      <button class="tablinks" onclick="openCity(event, 'SalaE')">Sala de Estar</button>
+      <button class="tablinks" onclick="openCity(event, 'QuartoC')">Quarto Casal</button>
+      <button class="tablinks" onclick="openCity(event, 'SalaJ')">Sala de Jantar</button>
+      <button class="tablinks" onclick="openCity(event, 'QuartoF')">Quarto dos Filhos</button>
+      <button class="tablinks" onclick="openCity(event, 'Cozinha')">Cozinha</button>
+      <button class="tablinks" onclick="openCity(event, 'WC')">Banheiro</button>
+      <button class="tablinks" onclick="openCity(event, 'jardim')">Jardim</button>
+      <button class="tablinks" onclick="openCity(event, 'garagem')">Garagem</button>
+      
     </div>
-    <div class="tab-pane" id="tab2">
-      <p>Olá, estou na seção 2</p>
-    </div>
-    <div class="tab-pane" id="tab3">
-      <p>Olá, estou na seção 3</p>
-    </div>
-    <div class="tab-pane" id="tab4">
-      <p>Olá, estou na seção 4</p>
-    </div>
-  </div>
-  </div>
 
+    <div id="Home" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h2>Casa Lobo Fernandes</h2>
+      <p>Paris is the capital of France.</p>
+      <button class="button">L01</button> <button class="button">L02</button> <button class="button">L03</button>
+      <p></p>
+      <button class="button">L04</button>  <button class="button">L05</button>  <button class="button">L06</button>
+      <p></p>
+      <img src="casa.jpg" alt="some text" width=240 height=380>
+      
+    </div>
 
-  </div>
+    <div id="SalaE" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Sala de Estar</h3>
+      <p>London is the capital city of .</p>
+      <button class="button">L07</button>  <button class="button">L08</button>  <button class="button">L09</button>
+      <p></p>
+      <button class="button">L10</button>  <button class="button">L11</button>  <button class="button">L12</button>
+      <p></p>
+      <img src="SalaEstar.jpg" alt="some text" width=280 height=300>
+    </div>
 
-  <!-- Primeiro o jQuery, depois o Popper.js, e depois o Bootstrap JS -->
-  <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
-  </html>
+    <div id="QuartoC" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Quarto Casal</h3>
+      <p>London is the capital city of .</p>
+      <button class="button">L13</button>  <button class="button">L14</button>  <button class="button">L15</button>
+      <p></p> 
+      <button class="button">L16</button>  <button class="button">L17</button>  <button class="button">L18</button>
+      <p></p>
+      <img src="QuartoCasal.jpg" alt="some text" width=280 height=290>
+    </div>
+
+    <div id="SalaJ" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Sala de Jantar</h3>
+      <p>London is the capital city of E.</p>
+      <button class="button">L19</button>  <button class="button">L20</button>  <button class="button">L21</button>
+      <p></p>
+      <button class="button">L22</button>  <button class="button">L23</button>  <button class="button">L24</button>
+      <p></p>
+      <img src="SalaJantar.jpg" alt="some text" width=280 height=340>
+      
+          </div>
+
+    <div id="QuartoF" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Quarto dos Filhos</h3>
+      <p>London is the capital city of</p>
+      <button class="button">L25</button>  <button class="button">L26</button>  <button class="button">L27</button>
+      <p></p> 
+      <button class="button">L28</button>  <button class="button">L29</button>  <button class="button">L30</button>
+      <p></p>
+      <img src="QuartoFilhos.jpg" alt="some text" width=280 height=260>
+      
+    </div>
+
+    <div id="Cozinha" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Cozinha</h3>
+      <p>Tokyo is the capital of Japan.</p>
+      <button class="button">L31</button>  <button class="button">L32</button>  <button class="button">L33</button>
+      <p></p>
+      <button class="button">L34</button>  <button class="button">L35</button>  <button class="button">L36</button>
+      <p></p>
+      <img src="Cozinha.jpg" alt="some text" width=280 height=300>
+    </div>
+
+    <div id="WC" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Banheiro</h3>
+      <p>London is the capital city of.</p>
+      <button class="button">L37</button>  <button class="button">L38</button>  <button class="button">L39</button>
+      <p></p>
+      <button class="button">L40</button>  <button class="button">L41</button>  <button class="button">L42</button>
+      <p></p>
+      <img src="Banheiro.jpg" alt="some text" width=280 height=130>
+    </div>
+
+    <div id="jardim" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Jardim</h3>
+      <p>London is the capital city of.</p>
+      <button class="button">L43</button>  <button class="button">L44</button>  <button class="button">L45</button>
+      <p></p>
+      <button class="button">L46</button>  <button class="button">L47</button>  <button class="button">L48</button>
+      <p></p>
+      <img src="Jardim.jpg" alt="some text" width=280 height=260>
+    </div>
+
+    <div id="garagem" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
+      <h3>Garagem</h3>
+      <p>London is the capital city of.</p>
+      <button class="button">L49</button>  <button class="button">L50</button>  <button class="button">L51</button>
+      <p></p>
+      <button class="button">L52</button>  <button class="button">L53</button>  <button class="button">L54</button>
+      <p></p>
+      <img src="Garagem.jpg" alt="some text" width=280 height=260>
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+   
+  </body>
+</html> 
