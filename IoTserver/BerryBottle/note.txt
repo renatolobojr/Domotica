@@ -1,0 +1,35 @@
+########### Sala de Estar
+Luz
+TV
+SOM
+
+########### Quarto de Casal
+LUZ
+ABE
+ABD
+AR
+
+########### Sala de Jantar
+LUZ
+AQUA
+
+########### Quartos do Filhos
+LUZ
+TV
+
+########### Cozinha
+AP1
+AP2
+LUZ
+
+########### Banheiro
+LUZ
+AQU
+
+########### Jardim
+LUZ
+IRR
+
+########### Garagem
+LUZ
+POR
