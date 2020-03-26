@@ -116,8 +116,8 @@
 
     <div id="SalaE" align="center" class="tabcontent">                        <!-- Meu comentário em HTML -->
       <h3>Sala de Estar</h3>
-      <p>London is the capital city of .</p>
-      <button class="button">LUZ</button> <button class="button">TV/SOM</button>
+      <div id="luz_st"></div> <div id="stv_st"></div>
+      <button class="button" onclick="Comando()">LUZ</button> <button class="button"onclick="Comando()">TV/SOM</button>
       <p></p>
       <img src="SalaEstar.jpg" alt="some text" width=280 height=300>
     </div>
@@ -197,6 +197,11 @@
       }
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
+    }
+
+    function Comando(){
+      var status=document.getElementById("luz_st");
+      status.innerHTML="luz ligada";
     }
 
     // Get the element with id="defaultOpen" and click on it

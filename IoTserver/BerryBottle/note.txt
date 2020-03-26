@@ -33,3 +33,15 @@ IRR
 ########### Garagem
 LUZ
 POR
+
+
+
+Thing
+    key
+    Nome
+    power       byte    0-100 (0 desligado e 100 ligado)
+    sensor
+    uptime      time    é um array de horarios de ligar
+    downtime    time    é um array de horarios de desligar
+
+
