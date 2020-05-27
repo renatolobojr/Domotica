@@ -22,7 +22,6 @@ http://www.forumdaconstrucao.com.br/conteudo.php?a=11&Cod=2105
 https://mundoeducacao.bol.uol.com.br/informatica/domotica.htm
 http://www.unibratec.edu.br/tecnologus/wp-content/uploads/2010/12/lins_moura.pdf
 _______________________________________________________
-
 # Atualização 19/03/2020
 
 Resolvi trabalhar com Django, Flask ou Bottle.
@@ -36,3 +35,11 @@ projeto em Domótica (iot)
 A impressão que eu tive do MQTT é que tem muita coisa 
 pronta já, desde aplicativos android e demais projetos, 
 só que não vingou ainda...
+_______________________________________________________
+# Atualização 27/05/2020
+irei testar em um pc-servidor, também procurarei estudar algumas outras frameworks-python como:
+http://www.web2py.com/init/default/documentation
+https://docs.pylonsproject.org/projects/pyramid/en/latest/quick_tutorial/index.html
+https://docs.cherrypy.org/en/latest/tutorials.html#tutorial-1-a-basic-web-application
+
+testando deploy automático
